@@ -3,6 +3,7 @@ import '../components/hello-attribute.js'
 import '../components/point-of-interest.js'
 import '../components/hello-shadowdom.js'
 import '../components/lazy-developer.js'
+import '../components/shadow-dom-card.js'
 import { HelloLifecycle } from '../components/hello-lifecycle'
 
 // Creating an instance of the custom element
