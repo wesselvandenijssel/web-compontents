@@ -1,1 +1,3 @@
-console.log("Home Page loaded");
+import '../components/hello-world.js'
+
+console.log('Home Page loaded')
