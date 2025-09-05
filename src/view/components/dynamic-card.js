@@ -1,49 +1,49 @@
 export class DynamicCard extends HTMLElement {
   constructor() {
     super()
-    
+
     // Create shadow root
     this.attachShadow({ mode: 'open' })
-    
+
     this.render()
   }
-  
+
   static get observedAttributes() {
     return ['title', 'content']
   }
-  
+
   attributeChangedCallback() {
     this.render()
   }
-  
+
   render() {
     // Clear previous content
     this.shadowRoot.innerHTML = ''
-    
+
     this.addStyles()
     this.createContent()
   }
-  
+
   createContent() {
     // Get attribute values with defaults
     const title = this.getAttribute('title') || 'Default Title'
     const content = this.getAttribute('content') || 'Default content'
-    
+
     // Create the card structure
     const section = document.createElement('section')
-    
+
     const titleElement = document.createElement('h1')
     titleElement.textContent = title
-    
+
     const contentElement = document.createElement('p')
     contentElement.textContent = content
-    
+
     section.appendChild(titleElement)
     section.appendChild(contentElement)
-    
+
     this.shadowRoot.appendChild(section)
   }
-  
+
   addStyles() {
     // Add styles
     const style = document.createElement('style')
@@ -81,7 +81,7 @@ export class DynamicCard extends HTMLElement {
         font-size: 1.1em;
       }
     `
-    
+
     this.shadowRoot.appendChild(style)
   }
 }
