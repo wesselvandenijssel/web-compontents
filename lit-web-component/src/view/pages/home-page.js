@@ -6,6 +6,7 @@ import "../components/lit-render.js";
 import "../components/col-helper";
 import "../components/evaluation-form";
 import "../components/countdown-timer.js";
+import "../components/weather-widget.js";
 
 const attrBtn = document.querySelector("#attrBtn");
 const attrInput = document.querySelector("#attrInput");
