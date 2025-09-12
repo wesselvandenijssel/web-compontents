@@ -1,0 +1,9 @@
+:root {
+  --h1-background-color: yellowgreen;
+}
+
+h1 {
+  background-color: var(--h1-background-color);
+  color: white;
+  padding: 1rem;
+}
