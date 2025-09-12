@@ -1,4 +1,5 @@
 import { LitElement, html, css } from "lit";
+import "./number-range-input";
 
 export class EvaluationForm extends LitElement {
   constructor() {
@@ -102,110 +103,27 @@ export class EvaluationForm extends LitElement {
 
         <fieldset class="evaluation-topics">
           <legend>Topics</legend>
-          <label for="html-value">HTML:</label>
-          <input
-            type="number"
-            id="html-value"
+          <number-range-input
             name="html"
+            label="HTML"
             min="0"
             max="10"
             required
-          />
-          <div>
-            <input
-              type="range"
-              id="html-slider"
-              name="html"
-              list="values"
-              aria-label="html-slider"
-              min="0"
-              max="10"
-              required
-            />
-            <datalist id="values">
-              <option value="0" label="0"></option>
-              <option value="1" label="1"></option>
-              <option value="2" label="2"></option>
-              <option value="3" label="3"></option>
-              <option value="4" label="4"></option>
-              <option value="5" label="5"></option>
-              <option value="6" label="6"></option>
-              <option value="7" label="7"></option>
-              <option value="8" label="8"></option>
-              <option value="9" label="9"></option>
-              <option value="10" label="10"></option>
-            </datalist>
-          </div>
-
-          <label for="css-value">CSS:</label>
-          <input
-            type="number"
-            id="css-value"
+          ></number-range-input>
+          <number-range-input
             name="css"
+            label="CSS"
             min="0"
             max="10"
             required
-          />
-          <div>
-            <input
-              type="range"
-              id="css-slider"
-              name="css"
-              list="values"
-              aria-label="css-slider"
-              min="0"
-              max="10"
-              required
-            />
-            <datalist id="values">
-              <option value="0" label="0"></option>
-              <option value="1" label="1"></option>
-              <option value="2" label="2"></option>
-              <option value="3" label="3"></option>
-              <option value="4" label="4"></option>
-              <option value="5" label="5"></option>
-              <option value="6" label="6"></option>
-              <option value="7" label="7"></option>
-              <option value="8" label="8"></option>
-              <option value="9" label="9"></option>
-              <option value="10" label="10"></option>
-            </datalist>
-          </div>
-
-          <label for="js-value">JavaScript:</label>
-          <input
-            type="number"
-            id="js-value"
-            name="js"
+          ></number-range-input>
+          <number-range-input
+            name="javascript"
+            label="JavaScript"
             min="0"
             max="10"
             required
-          />
-          <div>
-            <input
-              type="range"
-              id="js-slider"
-              name="js"
-              list="values"
-              aria-label="js-slider"
-              min="0"
-              max="10"
-              required
-            />
-            <datalist id="values">
-              <option value="0" label="0"></option>
-              <option value="1" label="1"></option>
-              <option value="2" label="2"></option>
-              <option value="3" label="3"></option>
-              <option value="4" label="4"></option>
-              <option value="5" label="5"></option>
-              <option value="6" label="6"></option>
-              <option value="7" label="7"></option>
-              <option value="8" label="8"></option>
-              <option value="9" label="9"></option>
-              <option value="10" label="10"></option>
-            </datalist>
-          </div>
+          ></number-range-input>
         </fieldset>
 
         <button type="submit">Save</button>
