@@ -4,6 +4,7 @@ import "../components/lit-attributes.js";
 import "../components/lit-events";
 import "../components/lit-render.js";
 import "../components/col-helper";
+import "../components/evaluation-form";
 
 const attrBtn = document.querySelector("#attrBtn");
 const attrInput = document.querySelector("#attrInput");
