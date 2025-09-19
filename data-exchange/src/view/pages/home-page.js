@@ -1,1 +1,3 @@
-console.log('Home Page loaded');
+import "../components/image-list";
+
+console.log("Home Page loaded");
